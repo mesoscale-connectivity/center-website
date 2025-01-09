@@ -69,110 +69,148 @@
                 .button-container {
                   display: flex;
                   justify-content: center;
-                  margin: 1rem -3;
+                  margin: 2rem 0;
                   width: 100%;
                 }
                 
                 .button {
-                    display: inline-block;
-                    padding: 25px 140px;
-                    min-width: 160px;
-                    text-align: center;
-                    background-color: whitesmoke;
-                    color: black;
-                    text-decoration: none;
-                    font-family: "Helvetica Neue", Arial, sans-serif;
-                    font-weight: 900;
-                    font-size: 20px;
-                    border-radius: 0.4rem;
-                    transition: background-color 0.3s ease;
-                    letter-spacing: 0.5px;
+                    display: inline-block !important;
+                    padding: 25px 140px !important;
+                    min-width: 160px !important;
+                    text-align: center !important;
+                    background-color: whitesmoke !important;
+                    color: black !important;
+                    text-decoration: none !important;
+                    font-family: "Helvetica Neue", Arial, sans-serif !important;
+                    font-weight: 900 !important;
+                    font-size: 20px !important;
+                    border-radius: 0.4rem !important;
+                    transition: background-color 0.3s ease !important;
+                    letter-spacing: 0.5px !important;
                 }
 
                 @media (max-width: 1024px) {
                     .button {
-                      padding: 20px 100px;
-                      font-size: 18px;
-                      min-width: 140px;
+                      padding: 20px 100px !important;
+                      font-size: 18px !important;
+                      min-width: 140px !important;
                   }
                   .button-container {
-                    margin: 1.5rem 0;
+                    margin: 1.5rem 0 !important;
                   }
                 }
                 @media (max-width: 768px) {
                   .button {
-                      padding: 15px 60px;
-                      font-size: 16px;
-                      min-width: 120px;
+                      padding: 15px 60px !important;
+                      font-size: 16px !important;
+                      min-width: 120px !important;
                   }
                   .button-container {
-                    margin: 1rem 0;
+                    margin: 1rem 0 !important;
                   }
                 }
                 @media (max-width: 480px) {
                   .button {
-                    padding: 12px 40px;
-                    font-size: 14px;
-                    min-width: 100px;
-                    width: 80%;
+                    padding: 12px 40px !important;
+                    font-size: 14px !important;
+                    min-width: 100px !important;
+                    width: 80% !important;
                   }
                   .button-container {
-                    margin: 0.8rem 0;
+                    margin: 0.8rem 0 !important;
                   }
                 } 
                 
                 .button:hover {
-                    background-color: gray;
+                    background-color: gray !important;
+                }
+
+                .footer-container {
+                    max-width: 1600px;
+                    margin: 0 auto;
+                    padding: 0 4rem;
                 }
 
                 .footer-content {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 1rem 0;
+                    padding: 2rem 0;
                 }
 
                 .footer-left {
                     display: flex;
                     flex-direction: column;
-align-items: flex-start;
-gap: 1rem;
-}
+                    gap: 1rem;
+                    align-items: flex-start;
+                }
 
-.footer-right {
-display: flex;
-align-items: center;
-}
+                .footer-right {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                }
 
-.footer-logo {
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 1.2rem;
-font-weight: 500;
-}
+                .social-links {
+                    display: flex;
+                    gap: 1.5rem;
+                    align-items: center;
+                }
 
-.footer-email {
-font-family: "Helvetica Neue", Arial, sans-serif;
-text-align: right;
-}
+                .social-links svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: black !important;
+                    transition: opacity 0.3s ease;
+                }
 
-@media (max-width: 768px) {
-.footer-content {
-flex-direction: column;
-gap: 1.5rem;
-text-align: center;
-}
+                .social-links a {
+                    display: flex;
+                    align-items: center;
+                    padding: 6px;
+                    border: 2px solid black;
+                    border-radius: 6px;
+                    margin: 0 4px;
+                }
 
-.footer-left {
-align-items: center;
-}
+                .social-links a:hover svg {
+                    opacity: 0.7;
+                }
 
-.footer-right {
-width: 100%;
-justify-content: center;
-}
-}
+                .footer-email {
+                    text-decoration: underline;
+                }
+
+                .footer-email a:hover {
+                    opacity: 0.8;
+                }
+
+                .footer-logo, .footer-email {
+                    font-family: "Helvetica Neue", Arial, sans-serif;
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    color: #4682B4;
+                }
+
+                @media (max-width: 768px) {
+                    .footer-content {
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        text-align: center;
+                    }
+
+                    .footer-left {
+                        align-items: center;
+                        }
+
+                    .footer-right {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
     </style>
             <link rel="stylesheet" href="assets/css/squarespace-styles.css"/>
+            <script src="assets/js/animations.js" defer="defer"></script>
         </head>
     </xsl:template>
 </xsl:stylesheet>
