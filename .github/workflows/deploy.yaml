@@ -35,6 +35,8 @@ jobs:
           ref: mesoscale-github-mock
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Create CNAME file
+        run: echo 'www.mesoscale-connectivity.org/' > docs/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
