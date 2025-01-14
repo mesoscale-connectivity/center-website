@@ -53,9 +53,25 @@
                     text-underline-offset: 10px;
                     text-decoration-color: white;
                 }
+                @media (max-width: 414px) {
+                  body {
+                    padding-top: 90px; /* Adjust based on nav height for iPhone Plus/XR/11 */
+                  }
+                }
+                @media (max-width: 375px) {
+                  body {
+                    padding-top: 100px; /* Adjust based on nav height for iPhone 6/7/8/X/XS/11 Pro */
+                  }
+                }
+
+                @media (max-width: 320px) {
+                  body {
+                    padding-top: 110px; /* Adjust based on nav height for iPhone SE */
+                  }
+                }
                 @media (max-width: 768px) {
                   body {
-                    padding-top: 80px;
+                    padding-top: 110px;
                   }
                   .nav-links {
                         flex-direction: row;
