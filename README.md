@@ -1,3 +1,6 @@
-# This is a draft for the Website of the Center for Mesoscale Connectivity
+# This is the repository that hosts the Website of the Center for Mesoscale Connectivity
 
-Test done by Franco Pestilli 
+Copyright 2025 
+
+Franco Pestilli 
+The University of Texas at Austin
